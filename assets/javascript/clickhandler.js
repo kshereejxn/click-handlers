@@ -10,15 +10,19 @@ const blue_button = document.querySelector("#blue_button");
 blue_button.addEventListener("click", function () {
     color_box.className = "blue";
 })
-/* TODO 1
-*
-* Add the JS for the pink button
-*
-*/
+// JS for the pink button
+const pink_button = document.querySelector("#pink_button");
+pink_button.addEventListener("click", function () {
+    color_box.className = "pink";
+})
+
 let count = 0;
 const countspan = document.querySelector("#countspan");
 const counter_button = document.querySelector("#counter_button");
 counter_button.addEventListener("click", function () {
+    console.log (" count");
+    count = countspan + 1;
+  
     /* TODO 2
     *
     * Fill in this function so that it increments
