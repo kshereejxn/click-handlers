@@ -19,17 +19,11 @@ pink_button.addEventListener("click", function () {
 let count = 0;
 const countspan = document.querySelector("#countspan");
 const counter_button = document.querySelector("#counter_button");
-counter_button.addEventListener("click", function () {
-    console.log (" count");
-    count = countspan + 1;
-  
-    /* TODO 2
-    *
-    * Fill in this function so that it increments
-    * (adds one to) the variable named count,
-    * then updates the inner text of "countspan"
-    * to show the current value of "count".
-    */
+counter_button.addEventListener("click", function () { 
+    console.log (" count")
+    count = count + 1;
+    countspan.innerHTML = count
+
 })
 const even_or_odd_button = document.querySelector("#even_or_odd_button");
 even_or_odd_button.addEventListener("click", function () {
