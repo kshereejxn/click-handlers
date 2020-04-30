@@ -28,8 +28,9 @@ counter_button.addEventListener("click", function () {
 const even_or_odd_button = document.querySelector("#even_or_odd_button");
 even_or_odd_button.addEventListener("click", function () {
     if (count %2===0)
-    console.log ("even")
+    alert ("Counter is even")
     else
-    console.log ("odd")
-   
+    alert ("Counter is odd")
+  
 })
+
